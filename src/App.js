@@ -4,12 +4,12 @@ import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="bg-gray-100 min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow container mx-auto p-4">
           <Routes>
             <Route path="/" element={<Menu />} />
           </Routes>
@@ -18,6 +18,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
